@@ -253,7 +253,10 @@ ul li{
         border-radius: 15px;
         justify-content: flex-start;
     }
-    #search{position: absolute;width: 250px;height: 25px;border-radius: 15px;top: 75px;right: 80px;}
+    #search{position: absolute;width: 250px;height: 25px;border-radius: 15px;top: 75px;left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; }
     ul{ 
         margin-left: 0;
         text-decoration: none;
@@ -277,7 +280,7 @@ ul li{
     #face{margin-left: 250px;margin-top: 5px;}
     #twit{margin-left: 15px;}
     #insta{margin-left: 15px;}
-    
+
     .middleSection{
         background-color: transparent;
         width: 965px;
