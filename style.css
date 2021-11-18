@@ -1,19 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-/* SETS GENERALES */
+    /* SETS GENERALES */
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 
-/* COLOR BASE (BODY) */
+    /* COLOR BASE (BODY) */
 body{background-color: #F3F3F3;}
 
-/* SCROLL BAR */
+    /* SCROLL BAR */
 ::-webkit-scrollbar{width: 0.5em;}
 ::-webkit-scrollbar-track{background: #E4D6E4;border-radius: 25px;margin:10px 0 10px 0}
 ::-webkit-scrollbar-thumb{background: #975ac0; border-radius: 25px;}
 
-/* PRIMER HEADER */
+    /* PRIMER HEADER */
 .mainHeader{
     display: flex;
     justify-content:right;
@@ -27,7 +28,7 @@ body{background-color: #F3F3F3;}
 #logo{position: absolute; left: 2rem;}
 #face, #twit, #insta{margin-right: 20px;}
 
-/* SEGUNDO HEADER */
+    /* SEGUNDO HEADER */
 
 .subHeader{
     background-color:#1E203F;
@@ -55,7 +56,7 @@ ul li{
 }
 #search{width: 400px;height: 30px;border-radius: 15px;}
 
-/* FOOOTER */
+    /* FOOOTER */
 .footer{background-color:#1E203F;
     color: #FFD1F1;
     height: 65px ;
@@ -64,11 +65,14 @@ ul li{
 }
 #cred{position: relative; top: 40%}
 
+    /* MAIN SECTION */
 .mainSection{background-color:#ececec;
     height: 40.76rem ;
     display: flex;
     justify-content: space-between;
 }
+
+/* SECTION IZQUIERDA*/
 .leftSection{
     background-color:#d8d8d8;
     width: 175px;
@@ -80,12 +84,14 @@ ul li{
 }
 .leftSection div {
     background-color: rgb(255, 255, 255);
-    width: 150px;
+    width: 155px;
     height: 120px;
     margin-left: 10px;
-    margin-top: 7.5px;
+    margin-top: 20px;
     border-radius: 25px;
 }
+
+/* SECTION MEDIO*/
 .middleSection{
     background-color: transparent;
     width: fit-content;
@@ -96,10 +102,7 @@ ul li{
     flex-wrap: wrap;
     overflow-y: scroll;
     padding: 0 2rem 0 2rem;
-    
-    
 }
-
 .middleSection .item{
     background-color: rgb(255, 255, 255);
     width: 200px;
@@ -110,21 +113,7 @@ ul li{
     margin-top: 10px;
     margin-bottom: 15px;  
 }
-
-.label{
-    padding-top: 5px;
-    text-align: center;
-    color:#26294e;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    width: 120px;
-    height: 35px;
-    background-color: thistle;
-    position: absolute;
-    left: 210px;
-    border-bottom-left-radius: 55%;
-    border-bottom-right-radius: 55%;
-}
+/* SECTION DERECHA */
 .rightSection{
     background-color: #d8d8d8;
     width: 175px;
@@ -137,75 +126,139 @@ ul li{
 }
 .rightSection div {
     background-color: rgb(255, 255, 255);
-    width: 150px;
+    width: 155px;
     height: 120px;
     margin-left: 10px;
-    margin-top: 7.5px;
+    margin-top: 20px;
     border-radius: 25px;
 }
 
-/* FOTOS */
 
 
-#add{max-width: 100%;max-height:100%;min-width:50%;min-height:108px ;}
+ /* BOTONES */
+.comp{
+    padding-top:4.5px;
+    text-align:  center;
+    width: 100%;
+    height: 40px;
+    background-color: #1E203F;
+    margin-top: 7.5rem;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;}
+
+.btnComp{width: 80px;height: 27px;border-radius: 10px;border: solid 1px #E4D6E4;background-color: transparent; color: #E4D6E4;}
+.btnComp:hover{background-color:#E4D6E4; color:#1E203F ;}
+
+ /* Carteles */
+
+.label{
+    padding-top: 5px;
+    text-align: center;
+    color:#26294e;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    width: 120px;
+    height: 35px;
+    background-color: thistle;
+    position: absolute;
+    border-bottom-left-radius: 55%;
+    border-bottom-right-radius: 55%;
+}
+
+#lab0{left:11.5rem}
+#lab1{left: 30px;font-size: 14px;}
+#lab2{right: 30px;font-size: 14px;}
 
 
+    /* FOTOS */
+
+/* FOTO PUBLICIDAD */
+#add{max-width: 100%;max-height:100%;min-width:50%;min-height:108px ;padding: 20px;}
+
+/* Main (centro) */
+#h0001{background-image: url(stock/zapatillas/0001.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0002{background-image: url(stock/zapatillas/0002.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0003{background-image: url(stock/zapatillas/0003.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0004{background-image: url(stock/zapatillas/0004.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0005{background-image: url(stock/zapatillas/0005.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0006{background-image: url(stock/zapatillas/0006.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0007{background-image: url(stock/zapatillas/0007.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0008{background-image: url(stock/zapatillas/0008.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0009{background-image: url(stock/zapatillas/0009.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0010{background-image: url(stock/zapatillas/0010.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0011{background-image: url(stock/zapatillas/0011.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0012{background-image: url(stock/zapatillas/0012.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0013{background-image: url(stock/zapatillas/0013.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0014{background-image: url(stock/zapatillas/0014.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0015{background-image: url(stock/zapatillas/0015.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0016{background-image: url(stock/zapatillas/0016.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0017{background-image: url(stock/zapatillas/0017.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0018{background-image: url(stock/zapatillas/0018.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0019{background-image: url(stock/zapatillas/0019.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0020{background-image: url(stock/zapatillas/0020.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+
+/* Laterales */
+#h0021{background-image: url(stock/zapatillas/0021.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0022{background-image: url(stock/zapatillas/0022.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0023{background-image: url(stock/zapatillas/0023.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0024{background-image: url(stock/zapatillas/0024.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+
+#h0025{background-image: url(stock/zapatillas/0025.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0026{background-image: url(stock/zapatillas/0026.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0027{background-image: url(stock/zapatillas/0027.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
+#h0028{background-image: url(stock/zapatillas/0028.jpg);background-size: 80%;background-repeat: no-repeat;background-position: center;}
 
 
-
-
-
-
+/* --------------------------------------------+-------------------------+------------------------+------------------------------+ */
+    /* Media Query */
 @media only screen and (max-width: 900px) {
 
-    .mainSection{background-color:#ececec;
+    .mainSection{
+        background-color:#ececec;
         height: 650px ;
-        
         display: flex;
         justify-content: space-between;
     }
     .leftSection{
         background-color:#d8d8d8;
         width: 100px;
-        height: 650px;
-        order: -2;
-        
+        height: 325px;
+        justify-content: flex-end;
     }
-
-
-
-    .leftSection div {
+    .leftSection div { 
         background-color: rgb(255, 255, 255);
         width: 75px;
         height: 50px;
         margin-left: 2px;
-        margin-top: 7.5px;
+        margin-top: 10.5px;
         border-radius: 25px;
     }
     .rightSection{
         background-color: #d8d8d8;
-        width: 100px;
-        height: 325px;
-        order: -1;
-        display: none;
-        
+        width: 85px;
+        height: 326px;
+        justify-content: flex-start;
+        position: absolute;
+        left: 0px;
+        top:433px
     }
     .rightSection div {
+        display: flex;
         background-color: rgb(255, 255, 255);
         width: 75px;
         height: 50px;
-        margin-left: 2px;
-        margin-top: 7.5px;
-        border-radius: 25px;
+        padding-left: 2px;
+        margin-left: 2.5px;
+        margin-top: 10.5px;
+        border-radius: 15px;
+        justify-content: flex-start;
     }
-
     #search{position: absolute;width: 250px;height: 25px;border-radius: 15px;top: 75px;right: 80px;}
     ul{ 
         margin-left: 0;
         text-decoration: none;
         list-style: none;   
-    }
-        
+    }  
     li{
         display: inline;
         color: #FFD1F1;
@@ -216,15 +269,15 @@ ul li{
     ul li{
         display: inline-block;
         padding: 0px 20px;
-        margin-right: 10px;
-        margin-left: 10px ;
+        margin-right: 5px;
+        margin-left: 5px ;
         margin-bottom: 35px;
     }
     #logo{position: absolute;margin-left: 10px;margin-top: 10px;}
     #face{margin-left: 250px;margin-top: 5px;}
     #twit{margin-left: 15px;}
     #insta{margin-left: 15px;}
-
+    
     .middleSection{
         background-color: transparent;
         width: 965px;
@@ -235,7 +288,7 @@ ul li{
         overflow-y: scroll;
         padding: 0px;
     }
-    .label{left: 80px;}
+    .label{left: 85px;}
     .middleSection .item{
         background-color: rgb(255, 255, 255);
         width: 120px;
@@ -243,14 +296,28 @@ ul li{
         border-radius: 25px;
         margin-left: 10px;
         margin-right: 10px;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 15px;  
     }
-    #add{width: 250px;height: 88px ;}
-    #h0003{margin-top: 0px;}
-    #h0004{margin-top: 0px;}
-    #h0011{margin-top: 0px;}
-    #h0012{margin-top: 0px;}
-    #h0017{margin-bottom: 0px;}
-    #h0018{margin-bottom: 0px;}
+    #add{width: 250px;height: 88px ;padding: 0;margin-top: 10px;}
+    #face, #twit, #insta{width: 30px;}
+    #logo{position: absolute; left: 1rem; top: 0.2rem;}
+    .leftSection div {
+        background-color: rgb(255, 255, 255);
+        width: 75px;
+        height: 50px;
+        margin-left: 2px;
+        margin-top: 7.5px;
+        border-radius: 15px;
+        margin: 5px;    }
+
+
+    .comp{padding-top:4.5px;text-align:  center;width: 100%; height: 30px;background-color: #1E203F;margin-top: 5rem;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;}
+    .btnComp{width: 80px;height: 20px;border-radius: 10px;border: solid 1px #E4D6E4;background-color: transparent; color: #E4D6E4;}
+    .btnComp:hover{background-color:#E4D6E4; color:#1E203F ;}
+
+
+    #lab2{display: none;font-size: 8;}
+    #lab1{left: 5px; width: 75px;font-size: 6;height: 45px;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;}
+    #lab0{left:95px;font-size: 8;}
 }
