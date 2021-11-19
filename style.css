@@ -70,6 +70,7 @@ ul li{
     height: 40.76rem ;
     display: flex;
     justify-content: space-between;
+    counter-reset: top-ventas;
 }
 
 /* SECTION IZQUIERDA*/
@@ -132,7 +133,10 @@ ul li{
     margin-top: 20px;
     border-radius: 25px;
 }
+.leftSection div ::before {content:counter(top-ventas);}
+.rightSection div ::before {content:counter(top-ventas);}
 
+h4{counter-increment: top-ventas; padding: 5px 0px 0px 10px;font-family: 'Montserrat', sans-serif; color: #1E203F;}
 
 
  /* BOTONES */
@@ -323,4 +327,6 @@ ul li{
     #lab2{display: none;font-size: 8;}
     #lab1{left: 5px; width: 75px;font-size: 6;height: 45px;border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;}
     #lab0{left:95px;font-size: 8;}
+
+    h4{font-size: 8px;padding: 2px 0px 0px 5px;}
 }
